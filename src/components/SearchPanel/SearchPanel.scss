@@ -1,0 +1,21 @@
+.search-panel {
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.search-panel select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.search-panel select:focus {
+    outline: none;
+}

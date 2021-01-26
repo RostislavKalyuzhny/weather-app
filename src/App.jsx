@@ -1,9 +1,15 @@
 import './App.scss';
 
-function App() {
+import SearchPanel from './components/SearchPanel/SearchPanel';
+
+const App = () => {
   return (
-    <div className="App">
-      Weather App
+    <div className="app">
+      <div className="container">
+
+      	<SearchPanel/>
+
+      </div>	
     </div>
   );
 }
