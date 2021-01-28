@@ -60,7 +60,7 @@ const App = () => {
                     }
                 ];
 
-    const [currentCity, setCurrentCity] = useState(null);
+    const [currentCity, setCurrentCity] = useState(cities[0]);
 
     const findCityObj = (name) => {
     	setCurrentCity( cities.find(city => city.name === name) );
