@@ -1,4 +1,5 @@
 .search-panel {
+    margin: 40px auto;
     border: 1px solid #ccc;
     width: 200px;
     border-radius: 3px;
@@ -6,7 +7,8 @@
     background: #fafafa;
 }
 
-.search-panel select {
+.search-panel select {   
+    font-size: 18px;
     padding: 5px 8px;
     width: 100%;
     border: none;

@@ -8,7 +8,7 @@ const SearchPanel = ({ options : cities, onSelected }) => {
 
 	useEffect(() => onSelected(option), [option]);
 	
-	const handleChange = async (event) => {
+	const handleChange = (event) => {
 	    setOption(event.target.value);
   	};
 
