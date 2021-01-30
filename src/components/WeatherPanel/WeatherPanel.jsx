@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react';
 
-import './Weather.scss';
+import './WeatherPanel.scss';
 
+import Weather from '../../services/Weather';
 import WeatherItem from './WeatherItem';
 
-const Weather = ({ name, lat, lng }) => {
+const WeatherPanel = ({ name, lat, lng }) => {
 
     const [weatherData, setWeatherData] = useState([]);
 
     useEffect(() => {
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${ lat }&lon=${ lng }&units=metric&exclude=hourly&lang=ru&appid=98299c85f0194824c133627239975ddb`)
-            .then(response => response.json())
-            .then(data => setWeatherData(data.daily));
+        const weather = new Weather();
+
+        weather.getShortWeather(lat, lng)
+            .then(data => setWeatherData(data));    
     }, [ lat, lng ]);
 
     const outWeather = weatherData.map((day, index) => {
@@ -25,4 +27,4 @@ const Weather = ({ name, lat, lng }) => {
 	);
 }
 
-export default Weather;
+export default WeatherPanel;

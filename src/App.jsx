@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.scss';
 
 import SearchPanel from './components/SearchPanel/SearchPanel';
-import Weather from './components/Weather/Weather';
+import WeatherPanel from './components/WeatherPanel/WeatherPanel';
 
 const App = () => {
 
@@ -71,7 +71,7 @@ const App = () => {
 			<div className="container">
 
 				<SearchPanel options={cities} onSelected={ (cityName) => findCityObj(cityName) }/>
-				<Weather {...currentCity} />	
+				<WeatherPanel {...currentCity} />	
 
 			</div>	
 		</div>

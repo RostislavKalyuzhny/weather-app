@@ -5,7 +5,8 @@ const WeatherItem = ({ day }) => {
 
 	return (
 		<div className="weather-item">
-            <h3> Unix time: { day.dt }</h3>
+            <div> { day.dt.weekDay }</div>
+            <div>{ day.dt.date } : { day.dt.month } </div>
             <div>{ day.weather[0].main }</div>
             <div>{ day.weather[0].description }</div>
             <div>
