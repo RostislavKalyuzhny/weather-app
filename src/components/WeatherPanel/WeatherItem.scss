@@ -1,4 +1,9 @@
+
+
 .weather-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	//background-color: #5757ff;
 	background: -webkit-linear-gradient(180deg, rgb(152, 150, 161) 2%, rgb(82, 106, 182));
 	background: -moz-linear-gradient(180deg, rgb(152, 150, 161) 2%, rgb(82, 106, 182));
@@ -6,4 +11,63 @@
 	color: #fff;
 	width: 12%;
 	border-radius: 2px;
+	padding: 20px 10px;
+}
+
+.weather-item p {
+	text-align: center;
+}
+
+.day {
+	margin: 0;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.date {
+	font-size: 24px;
+	margin: 15px 0 0 0;
+}
+
+.month {
+	margin: 5px 0;
+}
+
+.description {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.weather-icon {
+	margin: 0;
+	text-align: center;
+}
+
+.temperature {
+	display: flex;
+	justify-content: space-around;
+}
+
+.temperature div {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.temperature span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.min {
+	text-align: center;
+}
+
+.max {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
 }
